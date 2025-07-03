@@ -1,0 +1,26 @@
+/ {
+  aliases {
+		mcuboot-button0 = &button1;
+		mcuboot-led0 = &led1;
+  };
+};
+
+/* Step 2.2 - Add external flash to MCUboot */
+
+/* Define the same S25FL128L flash device for MCUboot */
+&spi1 {
+    status = "okay";
+    s25fl128l: s25fl128l@0 {
+        compatible = "jedec,spi-nor";
+        reg = <0>;
+        spi-max-frequency = <8000000>;
+        jedec-id = [01 60 18];
+        size = <134217728>; /* 128 Mbit = 16 MB */
+        status = "okay";
+    };
+};
+
+/* Enable the flash for MCUboot use */
+&s25fl128l {
+    status = "okay";
+};

@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/NordProjc/spi_DFU_External/build/_sysbuild/sysbuild/images/bootloader/CMakeFiles/mcuboot"
+		},
+		{
+			"file" : "C:/NordProjc/spi_DFU_External/build/_sysbuild/sysbuild/images/bootloader/CMakeFiles/mcuboot.rule"
+		},
+		{
+			"file" : "C:/NordProjc/spi_DFU_External/build/_sysbuild/sysbuild/images/bootloader/CMakeFiles/mcuboot-complete.rule"
+		},
+		{
+			"file" : "C:/NordProjc/spi_DFU_External/build/_sysbuild/sysbuild/images/bootloader/mcuboot-prefix/src/mcuboot-stamp/mcuboot-build.rule"
+		},
+		{
+			"file" : "C:/NordProjc/spi_DFU_External/build/_sysbuild/sysbuild/images/bootloader/mcuboot-prefix/src/mcuboot-stamp/mcuboot-configure.rule"
+		},
+		{
+			"file" : "C:/NordProjc/spi_DFU_External/build/_sysbuild/sysbuild/images/bootloader/mcuboot-prefix/src/mcuboot-stamp/mcuboot-download.rule"
+		},
+		{
+			"file" : "C:/NordProjc/spi_DFU_External/build/_sysbuild/sysbuild/images/bootloader/mcuboot-prefix/src/mcuboot-stamp/mcuboot-install.rule"
+		},
+		{
+			"file" : "C:/NordProjc/spi_DFU_External/build/_sysbuild/sysbuild/images/bootloader/mcuboot-prefix/src/mcuboot-stamp/mcuboot-mkdir.rule"
+		},
+		{
+			"file" : "C:/NordProjc/spi_DFU_External/build/_sysbuild/sysbuild/images/bootloader/mcuboot-prefix/src/mcuboot-stamp/mcuboot-patch.rule"
+		},
+		{
+			"file" : "C:/NordProjc/spi_DFU_External/build/_sysbuild/sysbuild/images/bootloader/mcuboot-prefix/src/mcuboot-stamp/mcuboot-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"mcuboot"
+		],
+		"name" : "mcuboot"
+	}
+}

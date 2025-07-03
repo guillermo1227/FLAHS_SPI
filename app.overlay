@@ -1,0 +1,26 @@
+/* STEP 2.1 - Add external flash to application */
+
+/* First define the S25FL128L flash device */
+&spi1 {
+    status = "okay";
+    s25fl128l: s25fl128l@0 {
+        compatible = "jedec,spi-nor";   // Driver genérico SPI NOR
+        reg = <0>;                      // Chip Select 0 (CS0)
+        spi-max-frequency = <8000000>;  // 8MHz máximo
+        jedec-id = [01 60 18];  //Manufacturer ID for Infineon 01h Memory Interface Type 60h  Device ID LSB - Density and Features 18h (128Mb)
+        size = <134217728>; /* 128 Mbit = 16 MB */
+        status = "okay";
+    };
+};
+
+/* Enable the flash for application use */
+&s25fl128l {
+    status = "okay";
+};
+
+/* Tell Nordic Partition Manager about external flash */
+/ {
+    chosen {
+        nordic,pm-ext-flash = &s25fl128l;
+    };
+};

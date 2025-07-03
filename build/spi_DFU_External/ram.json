@@ -1,0 +1,1191 @@
+{
+    "symbols": {
+        "name": "Root",
+        "size": 12778,
+        "identifier": "root",
+        "children": [
+            {
+                "name": "(no paths)",
+                "size": 3876,
+                "identifier": ":",
+                "children": [
+                    {
+                        "name": "dynamic_regions.0",
+                        "size": 12,
+                        "identifier": ":\\dynamic_regions.0",
+                        "address": 536873484,
+                        "section": "bss"
+                    },
+                    {
+                        "name": "ctx.0",
+                        "size": 556,
+                        "identifier": ":\\ctx.0",
+                        "address": 536873520,
+                        "section": "bss"
+                    },
+                    {
+                        "name": "on.2",
+                        "size": 4,
+                        "identifier": ":\\on.2",
+                        "address": 536874200,
+                        "section": "bss"
+                    },
+                    {
+                        "name": "cli.1",
+                        "size": 16,
+                        "identifier": ":\\cli.1",
+                        "address": 536874184,
+                        "section": "bss"
+                    },
+                    {
+                        "name": "_kernel",
+                        "size": 32,
+                        "identifier": ":\\_kernel",
+                        "address": 536874480,
+                        "section": "bss"
+                    },
+                    {
+                        "name": "z_main_thread",
+                        "size": 128,
+                        "identifier": ":\\z_main_thread",
+                        "address": 536873032,
+                        "section": "bss"
+                    },
+                    {
+                        "name": "k_sys_work_q",
+                        "size": 160,
+                        "identifier": ":\\k_sys_work_q",
+                        "address": 536873160,
+                        "section": "bss"
+                    },
+                    {
+                        "name": "z_interrupt_stacks",
+                        "size": 2112,
+                        "identifier": ":\\z_interrupt_stacks",
+                        "address": 536876736,
+                        "section": "noinit"
+                    },
+                    {
+                        "name": "g_img_mgmt_state",
+                        "size": 48,
+                        "identifier": ":\\g_img_mgmt_state",
+                        "address": 536874076,
+                        "section": "bss"
+                    },
+                    {
+                        "name": "z_idle_threads",
+                        "size": 128,
+                        "identifier": ":\\z_idle_threads",
+                        "address": 536872904,
+                        "section": "bss"
+                    },
+                    {
+                        "name": "_sw_isr_table",
+                        "size": 384,
+                        "identifier": ":\\_sw_isr_table",
+                        "address": 92188,
+                        "section": "sw_isr_table"
+                    },
+                    {
+                        "name": "_thread_dummy",
+                        "size": 128,
+                        "identifier": ":\\_thread_dummy",
+                        "address": 536873320,
+                        "section": "bss"
+                    },
+                    {
+                        "name": "_SEGGER_RTT",
+                        "size": 168,
+                        "identifier": ":\\_SEGGER_RTT",
+                        "address": 536871952,
+                        "section": "_RTT_SECTION_NAME"
+                    }
+                ]
+            },
+            {
+                "name": "ZEPHYR_BASE",
+                "size": 7638,
+                "identifier": "C:/ncs/v2.9.0/zephyr",
+                "children": [
+                    {
+                        "name": "lib",
+                        "size": 36,
+                        "identifier": "lib",
+                        "children": [
+                            {
+                                "name": "os",
+                                "size": 4,
+                                "identifier": "lib\\os",
+                                "children": [
+                                    {
+                                        "name": "printk.c",
+                                        "size": 4,
+                                        "identifier": "lib\\os\\printk.c",
+                                        "children": [
+                                            {
+                                                "name": "_char_out",
+                                                "size": 4,
+                                                "identifier": "lib\\os\\printk.c\\_char_out",
+                                                "address": 536872176,
+                                                "section": "datas"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "libc",
+                                "size": 32,
+                                "identifier": "lib\\libc",
+                                "children": [
+                                    {
+                                        "name": "picolibc",
+                                        "size": 20,
+                                        "identifier": "lib\\libc\\picolibc",
+                                        "children": [
+                                            {
+                                                "name": "libc-hooks.c",
+                                                "size": 20,
+                                                "identifier": "lib\\libc\\picolibc\\libc-hooks.c",
+                                                "children": [
+                                                    {
+                                                        "name": "_stdout_hook",
+                                                        "size": 4,
+                                                        "identifier": "lib\\libc\\picolibc\\libc-hooks.c\\_stdout_hook",
+                                                        "address": 536873496,
+                                                        "section": "bss"
+                                                    },
+                                                    {
+                                                        "name": "__stdout",
+                                                        "size": 16,
+                                                        "identifier": "lib\\libc\\picolibc\\libc-hooks.c\\__stdout",
+                                                        "address": 536872184,
+                                                        "section": "datas"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "common",
+                                        "size": 12,
+                                        "identifier": "lib\\libc\\common",
+                                        "children": [
+                                            {
+                                                "name": "source",
+                                                "size": 12,
+                                                "identifier": "lib\\libc\\common\\source",
+                                                "children": [
+                                                    {
+                                                        "name": "stdlib",
+                                                        "size": 12,
+                                                        "identifier": "lib\\libc\\common\\source\\stdlib",
+                                                        "children": [
+                                                            {
+                                                                "name": "malloc.c",
+                                                                "size": 12,
+                                                                "identifier": "lib\\libc\\common\\source\\stdlib\\malloc.c",
+                                                                "children": [
+                                                                    {
+                                                                        "name": "z_malloc_heap",
+                                                                        "size": 12,
+                                                                        "identifier": "lib\\libc\\common\\source\\stdlib\\malloc.c\\z_malloc_heap",
+                                                                        "address": 536873500,
+                                                                        "section": "bss"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "arch",
+                        "size": 5,
+                        "identifier": "arch",
+                        "children": [
+                            {
+                                "name": "arm",
+                                "size": 5,
+                                "identifier": "arch\\arm",
+                                "children": [
+                                    {
+                                        "name": "core",
+                                        "size": 5,
+                                        "identifier": "arch\\arm\\core",
+                                        "children": [
+                                            {
+                                                "name": "mpu",
+                                                "size": 1,
+                                                "identifier": "arch\\arm\\core\\mpu",
+                                                "children": [
+                                                    {
+                                                        "name": "arm_mpu.c",
+                                                        "size": 1,
+                                                        "identifier": "arch\\arm\\core\\mpu\\arm_mpu.c",
+                                                        "children": [
+                                                            {
+                                                                "name": "static_regions_num",
+                                                                "size": 1,
+                                                                "identifier": "arch\\arm\\core\\mpu\\arm_mpu.c\\static_regions_num",
+                                                                "address": 536874536,
+                                                                "section": "bss"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "tls.c",
+                                                "size": 4,
+                                                "identifier": "arch\\arm\\core\\tls.c",
+                                                "children": [
+                                                    {
+                                                        "name": "z_arm_tls_ptr",
+                                                        "size": 4,
+                                                        "identifier": "arch\\arm\\core\\tls.c\\z_arm_tls_ptr",
+                                                        "address": 536873480,
+                                                        "section": "bss"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "subsys",
+                        "size": 4144,
+                        "identifier": "subsys",
+                        "children": [
+                            {
+                                "name": "mgmt",
+                                "size": 4144,
+                                "identifier": "subsys\\mgmt",
+                                "children": [
+                                    {
+                                        "name": "mcumgr",
+                                        "size": 4144,
+                                        "identifier": "subsys\\mgmt\\mcumgr",
+                                        "children": [
+                                            {
+                                                "name": "mgmt",
+                                                "size": 8,
+                                                "identifier": "subsys\\mgmt\\mcumgr\\mgmt",
+                                                "children": [
+                                                    {
+                                                        "name": "src",
+                                                        "size": 8,
+                                                        "identifier": "subsys\\mgmt\\mcumgr\\mgmt\\src",
+                                                        "children": [
+                                                            {
+                                                                "name": "mgmt.c",
+                                                                "size": 8,
+                                                                "identifier": "subsys\\mgmt\\mcumgr\\mgmt\\src\\mgmt.c",
+                                                                "children": [
+                                                                    {
+                                                                        "name": "mgmt_group_list",
+                                                                        "size": 8,
+                                                                        "identifier": "subsys\\mgmt\\mcumgr\\mgmt\\src\\mgmt.c\\mgmt_group_list",
+                                                                        "address": 536873512,
+                                                                        "section": "bss"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "grp",
+                                                "size": 88,
+                                                "identifier": "subsys\\mgmt\\mcumgr\\grp",
+                                                "children": [
+                                                    {
+                                                        "name": "img_mgmt",
+                                                        "size": 20,
+                                                        "identifier": "subsys\\mgmt\\mcumgr\\grp\\img_mgmt",
+                                                        "children": [
+                                                            {
+                                                                "name": "src",
+                                                                "size": 20,
+                                                                "identifier": "subsys\\mgmt\\mcumgr\\grp\\img_mgmt\\src",
+                                                                "children": [
+                                                                    {
+                                                                        "name": "img_mgmt.c",
+                                                                        "size": 20,
+                                                                        "identifier": "subsys\\mgmt\\mcumgr\\grp\\img_mgmt\\src\\img_mgmt.c",
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "img_mgmt_group",
+                                                                                "size": 16,
+                                                                                "identifier": "subsys\\mgmt\\mcumgr\\grp\\img_mgmt\\src\\img_mgmt.c\\img_mgmt_group",
+                                                                                "address": 536872200,
+                                                                                "section": "datas"
+                                                                            },
+                                                                            {
+                                                                                "name": "img_mgmt",
+                                                                                "size": 4,
+                                                                                "identifier": "subsys\\mgmt\\mcumgr\\grp\\img_mgmt\\src\\img_mgmt.c\\img_mgmt",
+                                                                                "address": 92572,
+                                                                                "section": "mcumgr_handler_area"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "os_mgmt",
+                                                        "size": 68,
+                                                        "identifier": "subsys\\mgmt\\mcumgr\\grp\\os_mgmt",
+                                                        "children": [
+                                                            {
+                                                                "name": "src",
+                                                                "size": 68,
+                                                                "identifier": "subsys\\mgmt\\mcumgr\\grp\\os_mgmt\\src",
+                                                                "children": [
+                                                                    {
+                                                                        "name": "os_mgmt.c",
+                                                                        "size": 68,
+                                                                        "identifier": "subsys\\mgmt\\mcumgr\\grp\\os_mgmt\\src\\os_mgmt.c",
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "os_mgmt_group",
+                                                                                "size": 16,
+                                                                                "identifier": "subsys\\mgmt\\mcumgr\\grp\\os_mgmt\\src\\os_mgmt.c\\os_mgmt_group",
+                                                                                "address": 536872216,
+                                                                                "section": "datas"
+                                                                            },
+                                                                            {
+                                                                                "name": "os_mgmt_reset_work",
+                                                                                "size": 48,
+                                                                                "identifier": "subsys\\mgmt\\mcumgr\\grp\\os_mgmt\\src\\os_mgmt.c\\os_mgmt_reset_work",
+                                                                                "address": 536872128,
+                                                                                "section": "datas"
+                                                                            },
+                                                                            {
+                                                                                "name": "os_mgmt",
+                                                                                "size": 4,
+                                                                                "identifier": "subsys\\mgmt\\mcumgr\\grp\\os_mgmt\\src\\os_mgmt.c\\os_mgmt",
+                                                                                "address": 92576,
+                                                                                "section": "mcumgr_handler_area"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "transport",
+                                                "size": 4048,
+                                                "identifier": "subsys\\mgmt\\mcumgr\\transport",
+                                                "children": [
+                                                    {
+                                                        "name": "src",
+                                                        "size": 4048,
+                                                        "identifier": "subsys\\mgmt\\mcumgr\\transport\\src",
+                                                        "children": [
+                                                            {
+                                                                "name": "smp.c",
+                                                                "size": 3956,
+                                                                "identifier": "subsys\\mgmt\\mcumgr\\transport\\src\\smp.c",
+                                                                "children": [
+                                                                    {
+                                                                        "name": "smp_work_queue",
+                                                                        "size": 160,
+                                                                        "identifier": "subsys\\mgmt\\mcumgr\\transport\\src\\smp.c\\smp_work_queue",
+                                                                        "address": 536872712,
+                                                                        "section": "bss"
+                                                                    },
+                                                                    {
+                                                                        "name": "pkt_pool",
+                                                                        "size": 36,
+                                                                        "identifier": "subsys\\mgmt\\mcumgr\\transport\\src\\smp.c\\pkt_pool",
+                                                                        "address": 536872676,
+                                                                        "section": "net_buf_pool_area"
+                                                                    },
+                                                                    {
+                                                                        "name": "_net_buf_pkt_pool",
+                                                                        "size": 112,
+                                                                        "identifier": "subsys\\mgmt\\mcumgr\\transport\\src\\smp.c\\_net_buf_pkt_pool",
+                                                                        "address": 536882944,
+                                                                        "section": "noinit"
+                                                                    },
+                                                                    {
+                                                                        "name": "net_buf_data_pkt_pool",
+                                                                        "size": 1536,
+                                                                        "identifier": "subsys\\mgmt\\mcumgr\\transport\\src\\smp.c\\net_buf_data_pkt_pool",
+                                                                        "address": 536881408,
+                                                                        "section": "noinit"
+                                                                    },
+                                                                    {
+                                                                        "name": "smp_work_queue_stack",
+                                                                        "size": 2112,
+                                                                        "identifier": "subsys\\mgmt\\mcumgr\\transport\\src\\smp.c\\smp_work_queue_stack",
+                                                                        "address": 536874624,
+                                                                        "section": "noinit"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "name": "smp_uart.c",
+                                                                "size": 92,
+                                                                "identifier": "subsys\\mgmt\\mcumgr\\transport\\src\\smp_uart.c",
+                                                                "children": [
+                                                                    {
+                                                                        "name": "smp_uart_transport",
+                                                                        "size": 52,
+                                                                        "identifier": "subsys\\mgmt\\mcumgr\\transport\\src\\smp_uart.c\\smp_uart_transport",
+                                                                        "address": 536874124,
+                                                                        "section": "bss"
+                                                                    },
+                                                                    {
+                                                                        "name": "smp_uart_rx_ctxt",
+                                                                        "size": 8,
+                                                                        "identifier": "subsys\\mgmt\\mcumgr\\transport\\src\\smp_uart.c\\smp_uart_rx_ctxt",
+                                                                        "address": 536874176,
+                                                                        "section": "bss"
+                                                                    },
+                                                                    {
+                                                                        "name": "smp_uart_rx_fifo",
+                                                                        "size": 16,
+                                                                        "identifier": "subsys\\mgmt\\mcumgr\\transport\\src\\smp_uart.c\\smp_uart_rx_fifo",
+                                                                        "address": 536872660,
+                                                                        "section": "k_fifo_area"
+                                                                    },
+                                                                    {
+                                                                        "name": "smp_uart_work",
+                                                                        "size": 16,
+                                                                        "identifier": "subsys\\mgmt\\mcumgr\\transport\\src\\smp_uart.c\\smp_uart_work",
+                                                                        "address": 536872232,
+                                                                        "section": "datas"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "drivers",
+                        "size": 827,
+                        "identifier": "drivers",
+                        "children": [
+                            {
+                                "name": "clock_control",
+                                "size": 86,
+                                "identifier": "drivers\\clock_control",
+                                "children": [
+                                    {
+                                        "name": "clock_control_nrf.c",
+                                        "size": 86,
+                                        "identifier": "drivers\\clock_control\\clock_control_nrf.c",
+                                        "children": [
+                                            {
+                                                "name": "data",
+                                                "size": 80,
+                                                "identifier": "drivers\\clock_control\\clock_control_nrf.c\\data",
+                                                "address": 536874204,
+                                                "section": "bss"
+                                            },
+                                            {
+                                                "name": "hfclk_users",
+                                                "size": 4,
+                                                "identifier": "drivers\\clock_control\\clock_control_nrf.c\\hfclk_users",
+                                                "address": 536874284,
+                                                "section": "bss"
+                                            },
+                                            {
+                                                "name": "__devstate_dts_ord_65",
+                                                "size": 2,
+                                                "identifier": "drivers\\clock_control\\clock_control_nrf.c\\__devstate_dts_ord_65",
+                                                "address": 536872616,
+                                                "section": "device_states"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "console",
+                                "size": 309,
+                                "identifier": "drivers\\console",
+                                "children": [
+                                    {
+                                        "name": "uart_mcumgr.c",
+                                        "size": 309,
+                                        "identifier": "drivers\\console\\uart_mcumgr.c",
+                                        "children": [
+                                            {
+                                                "name": "uart_mcumgr_ignoring",
+                                                "size": 1,
+                                                "identifier": "drivers\\console\\uart_mcumgr.c\\uart_mcumgr_ignoring",
+                                                "address": 536874537,
+                                                "section": "bss"
+                                            },
+                                            {
+                                                "name": "uart_mcumgr_cur_buf",
+                                                "size": 4,
+                                                "identifier": "drivers\\console\\uart_mcumgr.c\\uart_mcumgr_cur_buf",
+                                                "address": 536874288,
+                                                "section": "bss"
+                                            },
+                                            {
+                                                "name": "uart_mgumgr_recv_cb",
+                                                "size": 4,
+                                                "identifier": "drivers\\console\\uart_mcumgr.c\\uart_mgumgr_recv_cb",
+                                                "address": 536874292,
+                                                "section": "bss"
+                                            },
+                                            {
+                                                "name": "uart_mcumgr_slab",
+                                                "size": 28,
+                                                "identifier": "drivers\\console\\uart_mcumgr.c\\uart_mcumgr_slab",
+                                                "address": 536872632,
+                                                "section": "k_mem_slab_area"
+                                            },
+                                            {
+                                                "name": "_k_mem_slab_buf_uart_mcumgr_slab",
+                                                "size": 272,
+                                                "identifier": "drivers\\console\\uart_mcumgr.c\\_k_mem_slab_buf_uart_mcumgr_slab",
+                                                "address": 536883056,
+                                                "section": "noinit"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "flash",
+                                "size": 68,
+                                "identifier": "drivers\\flash",
+                                "children": [
+                                    {
+                                        "name": "spi_nor.c",
+                                        "size": 42,
+                                        "identifier": "drivers\\flash\\spi_nor.c",
+                                        "children": [
+                                            {
+                                                "name": "__devstate_dts_ord_123",
+                                                "size": 2,
+                                                "identifier": "drivers\\flash\\spi_nor.c\\__devstate_dts_ord_123",
+                                                "address": 536872618,
+                                                "section": "device_states"
+                                            },
+                                            {
+                                                "name": "spi_nor_0_data",
+                                                "size": 40,
+                                                "identifier": "drivers\\flash\\spi_nor.c\\spi_nor_0_data",
+                                                "address": 536874296,
+                                                "section": "bss"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "soc_flash_nrf.c",
+                                        "size": 26,
+                                        "identifier": "drivers\\flash\\soc_flash_nrf.c",
+                                        "children": [
+                                            {
+                                                "name": "dev_layout",
+                                                "size": 8,
+                                                "identifier": "drivers\\flash\\soc_flash_nrf.c\\dev_layout",
+                                                "address": 536874336,
+                                                "section": "bss"
+                                            },
+                                            {
+                                                "name": "sem_lock",
+                                                "size": 16,
+                                                "identifier": "drivers\\flash\\soc_flash_nrf.c\\sem_lock",
+                                                "address": 536874344,
+                                                "section": "bss"
+                                            },
+                                            {
+                                                "name": "__devstate_dts_ord_106",
+                                                "size": 2,
+                                                "identifier": "drivers\\flash\\soc_flash_nrf.c\\__devstate_dts_ord_106",
+                                                "address": 536872620,
+                                                "section": "device_states"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "gpio",
+                                "size": 28,
+                                "identifier": "drivers\\gpio",
+                                "children": [
+                                    {
+                                        "name": "gpio_nrfx.c",
+                                        "size": 28,
+                                        "identifier": "drivers\\gpio\\gpio_nrfx.c",
+                                        "children": [
+                                            {
+                                                "name": "__devstate_dts_ord_75",
+                                                "size": 2,
+                                                "identifier": "drivers\\gpio\\gpio_nrfx.c\\__devstate_dts_ord_75",
+                                                "address": 536872622,
+                                                "section": "device_states"
+                                            },
+                                            {
+                                                "name": "gpio_nrfx_p1_data",
+                                                "size": 12,
+                                                "identifier": "drivers\\gpio\\gpio_nrfx.c\\gpio_nrfx_p1_data",
+                                                "address": 536874360,
+                                                "section": "bss"
+                                            },
+                                            {
+                                                "name": "__devstate_dts_ord_10",
+                                                "size": 2,
+                                                "identifier": "drivers\\gpio\\gpio_nrfx.c\\__devstate_dts_ord_10",
+                                                "address": 536872624,
+                                                "section": "device_states"
+                                            },
+                                            {
+                                                "name": "gpio_nrfx_p0_data",
+                                                "size": 12,
+                                                "identifier": "drivers\\gpio\\gpio_nrfx.c\\gpio_nrfx_p0_data",
+                                                "address": 536874372,
+                                                "section": "bss"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "serial",
+                                "size": 72,
+                                "identifier": "drivers\\serial",
+                                "children": [
+                                    {
+                                        "name": "uart_nrfx_uarte.c",
+                                        "size": 72,
+                                        "identifier": "drivers\\serial\\uart_nrfx_uarte.c",
+                                        "children": [
+                                            {
+                                                "name": "__devstate_dts_ord_101",
+                                                "size": 2,
+                                                "identifier": "drivers\\serial\\uart_nrfx_uarte.c\\__devstate_dts_ord_101",
+                                                "address": 536872626,
+                                                "section": "device_states"
+                                            },
+                                            {
+                                                "name": "uarte_0_data",
+                                                "size": 16,
+                                                "identifier": "drivers\\serial\\uart_nrfx_uarte.c\\uarte_0_data",
+                                                "address": 536872248,
+                                                "section": "datas"
+                                            },
+                                            {
+                                                "name": "uarte0_poll_out_byte",
+                                                "size": 1,
+                                                "identifier": "drivers\\serial\\uart_nrfx_uarte.c\\uarte0_poll_out_byte",
+                                                "address": 536874539,
+                                                "section": "bss"
+                                            },
+                                            {
+                                                "name": "uarte0_poll_in_byte",
+                                                "size": 1,
+                                                "identifier": "drivers\\serial\\uart_nrfx_uarte.c\\uarte0_poll_in_byte",
+                                                "address": 536874538,
+                                                "section": "bss"
+                                            },
+                                            {
+                                                "name": "uarte0_int_driven",
+                                                "size": 20,
+                                                "identifier": "drivers\\serial\\uart_nrfx_uarte.c\\uarte0_int_driven",
+                                                "address": 536872264,
+                                                "section": "datas"
+                                            },
+                                            {
+                                                "name": "uarte0_tx_buffer",
+                                                "size": 32,
+                                                "identifier": "drivers\\serial\\uart_nrfx_uarte.c\\uarte0_tx_buffer",
+                                                "address": 536874540,
+                                                "section": "bss"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "spi",
+                                "size": 220,
+                                "identifier": "drivers\\spi",
+                                "children": [
+                                    {
+                                        "name": "spi_nrfx_spi.c",
+                                        "size": 98,
+                                        "identifier": "drivers\\spi\\spi_nrfx_spi.c",
+                                        "children": [
+                                            {
+                                                "name": "__devstate_dts_ord_122",
+                                                "size": 2,
+                                                "identifier": "drivers\\spi\\spi_nrfx_spi.c\\__devstate_dts_ord_122",
+                                                "address": 536872628,
+                                                "section": "device_states"
+                                            },
+                                            {
+                                                "name": "spi_1_data",
+                                                "size": 96,
+                                                "identifier": "drivers\\spi\\spi_nrfx_spi.c\\spi_1_data",
+                                                "address": 536872284,
+                                                "section": "datas"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "spi_nrfx_spim.c",
+                                        "size": 122,
+                                        "identifier": "drivers\\spi\\spi_nrfx_spim.c",
+                                        "children": [
+                                            {
+                                                "name": "__devstate_dts_ord_94",
+                                                "size": 2,
+                                                "identifier": "drivers\\spi\\spi_nrfx_spim.c\\__devstate_dts_ord_94",
+                                                "address": 536872630,
+                                                "section": "device_states"
+                                            },
+                                            {
+                                                "name": "spi_3_data",
+                                                "size": 104,
+                                                "identifier": "drivers\\spi\\spi_nrfx_spim.c\\spi_3_data",
+                                                "address": 536872380,
+                                                "section": "datas"
+                                            },
+                                            {
+                                                "name": "spim_3_tx_buffer",
+                                                "size": 8,
+                                                "identifier": "drivers\\spi\\spi_nrfx_spim.c\\spim_3_tx_buffer",
+                                                "address": 536874580,
+                                                "section": "bss"
+                                            },
+                                            {
+                                                "name": "spim_3_rx_buffer",
+                                                "size": 8,
+                                                "identifier": "drivers\\spi\\spi_nrfx_spim.c\\spim_3_rx_buffer",
+                                                "address": 536874572,
+                                                "section": "bss"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "timer",
+                                "size": 44,
+                                "identifier": "drivers\\timer",
+                                "children": [
+                                    {
+                                        "name": "nrf_rtc_timer.c",
+                                        "size": 44,
+                                        "identifier": "drivers\\timer\\nrf_rtc_timer.c",
+                                        "children": [
+                                            {
+                                                "name": "int_mask",
+                                                "size": 4,
+                                                "identifier": "drivers\\timer\\nrf_rtc_timer.c\\int_mask",
+                                                "address": 536874388,
+                                                "section": "bss"
+                                            },
+                                            {
+                                                "name": "last_count",
+                                                "size": 8,
+                                                "identifier": "drivers\\timer\\nrf_rtc_timer.c\\last_count",
+                                                "address": 536872888,
+                                                "section": "bss"
+                                            },
+                                            {
+                                                "name": "overflow_cnt",
+                                                "size": 4,
+                                                "identifier": "drivers\\timer\\nrf_rtc_timer.c\\overflow_cnt",
+                                                "address": 536874392,
+                                                "section": "bss"
+                                            },
+                                            {
+                                                "name": "anchor",
+                                                "size": 8,
+                                                "identifier": "drivers\\timer\\nrf_rtc_timer.c\\anchor",
+                                                "address": 536872896,
+                                                "section": "bss"
+                                            },
+                                            {
+                                                "name": "force_isr_mask",
+                                                "size": 4,
+                                                "identifier": "drivers\\timer\\nrf_rtc_timer.c\\force_isr_mask",
+                                                "address": 536874384,
+                                                "section": "bss"
+                                            },
+                                            {
+                                                "name": "cc_data",
+                                                "size": 16,
+                                                "identifier": "drivers\\timer\\nrf_rtc_timer.c\\cc_data",
+                                                "address": 536872872,
+                                                "section": "bss"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "kernel",
+                        "size": 2626,
+                        "identifier": "kernel",
+                        "children": [
+                            {
+                                "name": "init.c",
+                                "size": 1473,
+                                "identifier": "kernel\\init.c",
+                                "children": [
+                                    {
+                                        "name": "z_idle_stacks",
+                                        "size": 384,
+                                        "identifier": "kernel\\init.c\\z_idle_stacks",
+                                        "address": 536878848,
+                                        "section": "noinit"
+                                    },
+                                    {
+                                        "name": "z_main_stack",
+                                        "size": 1088,
+                                        "identifier": "kernel\\init.c\\z_main_stack",
+                                        "address": 536879232,
+                                        "section": "noinit"
+                                    },
+                                    {
+                                        "name": "z_sys_post_kernel",
+                                        "size": 1,
+                                        "identifier": "kernel\\init.c\\z_sys_post_kernel",
+                                        "address": 536874588,
+                                        "section": "bss"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "system_work_q.c",
+                                "size": 1088,
+                                "identifier": "kernel\\system_work_q.c",
+                                "children": [
+                                    {
+                                        "name": "sys_work_q_stack",
+                                        "size": 1088,
+                                        "identifier": "kernel\\system_work_q.c\\sys_work_q_stack",
+                                        "address": 536880320,
+                                        "section": "noinit"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "work.c",
+                                "size": 8,
+                                "identifier": "kernel\\work.c",
+                                "children": [
+                                    {
+                                        "name": "pending_cancels",
+                                        "size": 8,
+                                        "identifier": "kernel\\work.c\\pending_cancels",
+                                        "address": 536874512,
+                                        "section": "bss"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "timeslicing.c",
+                                "size": 37,
+                                "identifier": "kernel\\timeslicing.c",
+                                "children": [
+                                    {
+                                        "name": "slice_timeouts",
+                                        "size": 24,
+                                        "identifier": "kernel\\timeslicing.c\\slice_timeouts",
+                                        "address": 536873448,
+                                        "section": "bss"
+                                    },
+                                    {
+                                        "name": "slice_expired",
+                                        "size": 1,
+                                        "identifier": "kernel\\timeslicing.c\\slice_expired",
+                                        "address": 536874589,
+                                        "section": "bss"
+                                    },
+                                    {
+                                        "name": "slice_ticks",
+                                        "size": 4,
+                                        "identifier": "kernel\\timeslicing.c\\slice_ticks",
+                                        "address": 536874528,
+                                        "section": "bss"
+                                    },
+                                    {
+                                        "name": "slice_max_prio",
+                                        "size": 4,
+                                        "identifier": "kernel\\timeslicing.c\\slice_max_prio",
+                                        "address": 536874524,
+                                        "section": "bss"
+                                    },
+                                    {
+                                        "name": "pending_current",
+                                        "size": 4,
+                                        "identifier": "kernel\\timeslicing.c\\pending_current",
+                                        "address": 536874520,
+                                        "section": "bss"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "timeout.c",
+                                "size": 20,
+                                "identifier": "kernel\\timeout.c",
+                                "children": [
+                                    {
+                                        "name": "announce_remaining",
+                                        "size": 4,
+                                        "identifier": "kernel\\timeout.c\\announce_remaining",
+                                        "address": 536874532,
+                                        "section": "bss"
+                                    },
+                                    {
+                                        "name": "timeout_list",
+                                        "size": 8,
+                                        "identifier": "kernel\\timeout.c\\timeout_list",
+                                        "address": 536872608,
+                                        "section": "datas"
+                                    },
+                                    {
+                                        "name": "curr_tick",
+                                        "size": 8,
+                                        "identifier": "kernel\\timeout.c\\curr_tick",
+                                        "address": 536873472,
+                                        "section": "bss"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "WORKSPACE",
+                "size": 1252,
+                "identifier": "C:/ncs/v2.9.0",
+                "children": [
+                    {
+                        "name": "modules",
+                        "size": 1248,
+                        "identifier": "modules",
+                        "children": [
+                            {
+                                "name": "hal",
+                                "size": 208,
+                                "identifier": "modules\\hal",
+                                "children": [
+                                    {
+                                        "name": "nordic",
+                                        "size": 208,
+                                        "identifier": "modules\\hal\\nordic",
+                                        "children": [
+                                            {
+                                                "name": "nrfx",
+                                                "size": 208,
+                                                "identifier": "modules\\hal\\nordic\\nrfx",
+                                                "children": [
+                                                    {
+                                                        "name": "drivers",
+                                                        "size": 208,
+                                                        "identifier": "modules\\hal\\nordic\\nrfx\\drivers",
+                                                        "children": [
+                                                            {
+                                                                "name": "src",
+                                                                "size": 208,
+                                                                "identifier": "modules\\hal\\nordic\\nrfx\\drivers\\src",
+                                                                "children": [
+                                                                    {
+                                                                        "name": "nrfx_clock.c",
+                                                                        "size": 8,
+                                                                        "identifier": "modules\\hal\\nordic\\nrfx\\drivers\\src\\nrfx_clock.c",
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "m_clock_cb",
+                                                                                "size": 8,
+                                                                                "identifier": "modules\\hal\\nordic\\nrfx\\drivers\\src\\nrfx_clock.c\\m_clock_cb",
+                                                                                "address": 536874396,
+                                                                                "section": "bss"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "nrfx_gpiote.c",
+                                                                        "size": 120,
+                                                                        "identifier": "modules\\hal\\nordic\\nrfx\\drivers\\src\\nrfx_gpiote.c",
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "m_cb",
+                                                                                "size": 120,
+                                                                                "identifier": "modules\\hal\\nordic\\nrfx\\drivers\\src\\nrfx_gpiote.c\\m_cb",
+                                                                                "address": 536872484,
+                                                                                "section": "datas"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "nrfx_spi.c",
+                                                                        "size": 40,
+                                                                        "identifier": "modules\\hal\\nordic\\nrfx\\drivers\\src\\nrfx_spi.c",
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "m_cb",
+                                                                                "size": 40,
+                                                                                "identifier": "modules\\hal\\nordic\\nrfx\\drivers\\src\\nrfx_spi.c\\m_cb",
+                                                                                "address": 536874404,
+                                                                                "section": "bss"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "nrfx_spim.c",
+                                                                        "size": 36,
+                                                                        "identifier": "modules\\hal\\nordic\\nrfx\\drivers\\src\\nrfx_spim.c",
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "m_cb",
+                                                                                "size": 36,
+                                                                                "identifier": "modules\\hal\\nordic\\nrfx\\drivers\\src\\nrfx_spim.c\\m_cb",
+                                                                                "address": 536874444,
+                                                                                "section": "bss"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "nrfx_ppi.c",
+                                                                        "size": 4,
+                                                                        "identifier": "modules\\hal\\nordic\\nrfx\\drivers\\src\\nrfx_ppi.c",
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "m_channels_allocated",
+                                                                                "size": 4,
+                                                                                "identifier": "modules\\hal\\nordic\\nrfx\\drivers\\src\\nrfx_ppi.c\\m_channels_allocated",
+                                                                                "address": 536872604,
+                                                                                "section": "datas"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "debug",
+                                "size": 1040,
+                                "identifier": "modules\\debug",
+                                "children": [
+                                    {
+                                        "name": "segger",
+                                        "size": 1040,
+                                        "identifier": "modules\\debug\\segger",
+                                        "children": [
+                                            {
+                                                "name": "SEGGER",
+                                                "size": 1040,
+                                                "identifier": "modules\\debug\\segger\\SEGGER",
+                                                "children": [
+                                                    {
+                                                        "name": "SEGGER_RTT.c",
+                                                        "size": 1040,
+                                                        "identifier": "modules\\debug\\segger\\SEGGER\\SEGGER_RTT.c",
+                                                        "children": [
+                                                            {
+                                                                "name": "_acUpBuffer",
+                                                                "size": 1024,
+                                                                "identifier": "modules\\debug\\segger\\SEGGER\\SEGGER_RTT.c\\_acUpBuffer",
+                                                                "address": 536870928,
+                                                                "section": "_RTT_SECTION_NAME"
+                                                            },
+                                                            {
+                                                                "name": "_acDownBuffer",
+                                                                "size": 16,
+                                                                "identifier": "modules\\debug\\segger\\SEGGER\\SEGGER_RTT.c\\_acDownBuffer",
+                                                                "address": 536870912,
+                                                                "section": "_RTT_SECTION_NAME"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "nrf",
+                        "size": 4,
+                        "identifier": "nrf",
+                        "children": [
+                            {
+                                "name": "subsys",
+                                "size": 4,
+                                "identifier": "nrf\\subsys",
+                                "children": [
+                                    {
+                                        "name": "partition_manager",
+                                        "size": 4,
+                                        "identifier": "nrf\\subsys\\partition_manager",
+                                        "children": [
+                                            {
+                                                "name": "flash_map_partition_manager.c",
+                                                "size": 4,
+                                                "identifier": "nrf\\subsys\\partition_manager\\flash_map_partition_manager.c",
+                                                "children": [
+                                                    {
+                                                        "name": "flash_map",
+                                                        "size": 4,
+                                                        "identifier": "nrf\\subsys\\partition_manager\\flash_map_partition_manager.c\\flash_map",
+                                                        "address": 536872180,
+                                                        "section": "datas"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "(hidden)",
+                "size": 12,
+                "identifier": "(hidden)"
+            }
+        ]
+    },
+    "total_size": 12778
+}

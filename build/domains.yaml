@@ -1,0 +1,9 @@
+default: spi_DFU_External
+build_dir: C:/NordProjc/spi_DFU_External/build
+domains:
+  - name: spi_DFU_External
+    build_dir: C:/NordProjc/spi_DFU_External/build/spi_DFU_External
+  - name: mcuboot
+    build_dir: C:/NordProjc/spi_DFU_External/build/mcuboot
+flash_order:
+  - spi_DFU_External
