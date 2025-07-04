@@ -1116,8 +1116,33 @@ zephyr_udc0: &usbd {
 
 
 
+&pinctrl {
+    spi1_custom: spi1_custom {
+        group1 {
+            psels = <((((((1) * 32U) + (8)) & 0x1FFU) << 0U) | ((4U & 0xFFU) << 24U))>,
+                   <((((((0) * 32U) + (12)) & 0x1FFU) << 0U) | ((5U & 0xFFU) << 24U))>,
+                   <((((((0) * 32U) + (11)) & 0x1FFU) << 0U) | ((6U & 0xFFU) << 24U))>;
+        };
+    };
+
+    spi1_custom_sleep: spi1_custom_sleep {
+        group1 {
+            psels = <((((((1) * 32U) + (8)) & 0x1FFU) << 0U) | ((4U & 0xFFU) << 24U))>,
+                   <((((((0) * 32U) + (12)) & 0x1FFU) << 0U) | ((5U & 0xFFU) << 24U))>,
+                   <((((((0) * 32U) + (11)) & 0x1FFU) << 0U) | ((6U & 0xFFU) << 24U))>;
+            low-power-enable;
+        };
+    };
+};
+
+
 &spi1 {
-    status = "okay";
+    compatible = "nordic,nrf-spim";
+    pinctrl-0 = <&spi1_custom>;
+    pinctrl-1 = <&spi1_custom_sleep>;
+    pinctrl-names = "default", "sleep";
+    cs-gpios = <&gpio0 8 (1 << 0)>;
+
     s25fl128l: s25fl128l@0 {
         compatible = "jedec,spi-nor";
         reg = <0>;

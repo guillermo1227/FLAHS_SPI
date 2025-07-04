@@ -1,8 +1,33 @@
 /* STEP 2.1 - Add external flash to application */
 
+/* Custom pinctrl for your specific pins */
+&pinctrl {
+    spi1_custom: spi1_custom {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 1, 8)>,     // P1.08 (tu pin SCK)
+                   <NRF_PSEL(SPIM_MOSI, 0, 12)>,    // P0.12 (tu pin MOSI)
+                   <NRF_PSEL(SPIM_MISO, 0, 11)>;    // P0.11 (tu pin MISO)
+        };
+    };
+    
+    spi1_custom_sleep: spi1_custom_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 1, 8)>,
+                   <NRF_PSEL(SPIM_MOSI, 0, 12)>,
+                   <NRF_PSEL(SPIM_MISO, 0, 11)>;
+            low-power-enable;
+        };
+    };
+};
+
 /* First define the S25FL128L flash device */
 &spi1 {
-    status = "okay";
+    compatible = "nordic,nrf-spim";
+    pinctrl-0 = <&spi1_custom>;
+    pinctrl-1 = <&spi1_custom_sleep>;
+    pinctrl-names = "default", "sleep";
+    cs-gpios = <&gpio0 8 GPIO_ACTIVE_LOW>;  // P0.08 para CS
+    
     s25fl128l: s25fl128l@0 {
         compatible = "jedec,spi-nor";   // Driver genérico SPI NOR
         reg = <0>;                      // Chip Select 0 (CS0)

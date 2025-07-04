@@ -100,13 +100,14 @@ int main(void)
 				printk("LED: ROJO\n");
 				break;
 			case 1:
-			
+
 				gpio_pin_set_dt(&rgb_r, 0);
 				gpio_pin_set_dt(&rgb_g, 1); // Verde ON
 				gpio_pin_set_dt(&rgb_b, 0);
 				printk("LED: VERDE\n");
 				break;
 			case 2:
+				/* Agrego esto*/
 				gpio_pin_set_dt(&rgb_r, 0);
 				gpio_pin_set_dt(&rgb_g, 0);
 				gpio_pin_set_dt(&rgb_b, 1); // Azul ON

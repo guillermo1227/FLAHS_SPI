@@ -1,6 +1,6 @@
 {
     "format-version": 1,
-    "time": 1751568866,
+    "time": 1751642714,
     "files": [
         {
             "type": "application",
@@ -11,9 +11,9 @@
             "slot_index_primary": "1",
             "slot_index_secondary": "2",
             "version_MCUBOOT": "0.0.0+0",
-            "size": 46552,
+            "size": 44084,
             "file": "spi_DFU_External.signed.bin",
-            "modtime": 1751568866
+            "modtime": 1751642713
         }
     ],
     "name": "spi_DFU_External"
