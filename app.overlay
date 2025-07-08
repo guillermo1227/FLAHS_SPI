@@ -49,3 +49,7 @@
         nordic,pm-ext-flash = &s25fl128l;
     };
 };
+
+&reg1 {
+    regulator-initial-mode = <NRF5X_REG_MODE_LDO>;
+};

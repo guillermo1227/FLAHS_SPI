@@ -60,21 +60,25 @@ int main(void)
 
 	/* Configure RGB LEDs */
 	if (!device_is_ready(rgb_r.port)) {
+		printk("LED ROJO no disponible\n");
 		return -1;
 	}
 
 	ret = gpio_pin_configure_dt(&rgb_r, GPIO_OUTPUT_INACTIVE);
 	if (ret < 0) {
+		printk("LED ROJO no disponible\n");
 		return -1;
 	}
 
 	ret = gpio_pin_configure_dt(&rgb_g, GPIO_OUTPUT_INACTIVE);
 	if (ret < 0) {
+		printk("LED VERDE no disponible\n");
 		return -1;
 	}
 
 	ret = gpio_pin_configure_dt(&rgb_b, GPIO_OUTPUT_INACTIVE);
 	if (ret < 0) {
+		printk("LED AZUL no disponible\n");
 		return -1;
 	}
 

@@ -156,7 +156,7 @@ set_target_properties(${DEVICETREE_TARGET} PROPERTIES "DT_PROP|/soc/power@400000
 set_target_properties(${DEVICETREE_TARGET} PROPERTIES "DT_PROP|/soc/power@40000000/regulator@40000578|reg" "1073743224;1;")
 set_target_properties(${DEVICETREE_TARGET} PROPERTIES "DT_PROP|/soc/power@40000000/regulator@40000578|zephyr,deferred-init" "False")
 set_target_properties(${DEVICETREE_TARGET} PROPERTIES "DT_PROP|/soc/power@40000000/regulator@40000578|regulator-name" "REG1")
-set_target_properties(${DEVICETREE_TARGET} PROPERTIES "DT_PROP|/soc/power@40000000/regulator@40000578|regulator-initial-mode" "1")
+set_target_properties(${DEVICETREE_TARGET} PROPERTIES "DT_PROP|/soc/power@40000000/regulator@40000578|regulator-initial-mode" "0")
 set_target_properties(${DEVICETREE_TARGET} PROPERTIES "DT_REG|/soc/power@40000000/regulator@40000578|NUM" "1")
 set_target_properties(${DEVICETREE_TARGET} PROPERTIES "DT_REG|/soc/power@40000000/regulator@40000578|ADDR" "0x40000578;")
 set_target_properties(${DEVICETREE_TARGET} PROPERTIES "DT_REG|/soc/power@40000000/regulator@40000578|SIZE" "0x1;")
