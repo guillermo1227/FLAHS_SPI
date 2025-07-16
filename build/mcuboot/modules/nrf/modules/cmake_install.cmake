@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/NordProjc/spi_DFU_External/build/mcuboot/modules/nrf/modules/mcuboot/hooks/cmake_install.cmake")
-  include("C:/NordProjc/spi_DFU_External/build/mcuboot/modules/nrf/modules/wfa-qt/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/mcuboot/modules/nrf/modules/mcuboot/hooks/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/mcuboot/modules/nrf/modules/wfa-qt/cmake_install.cmake")
 
 endif()
 

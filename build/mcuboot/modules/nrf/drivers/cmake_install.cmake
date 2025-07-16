@@ -39,11 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/NordProjc/spi_DFU_External/build/mcuboot/modules/nrf/drivers/entropy/cmake_install.cmake")
-  include("C:/NordProjc/spi_DFU_External/build/mcuboot/modules/nrf/drivers/flash/cmake_install.cmake")
-  include("C:/NordProjc/spi_DFU_External/build/mcuboot/modules/nrf/drivers/gpio/cmake_install.cmake")
-  include("C:/NordProjc/spi_DFU_External/build/mcuboot/modules/nrf/drivers/hw_cc3xx/cmake_install.cmake")
-  include("C:/NordProjc/spi_DFU_External/build/mcuboot/modules/nrf/drivers/serial/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/mcuboot/modules/nrf/drivers/entropy/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/mcuboot/modules/nrf/drivers/flash/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/mcuboot/modules/nrf/drivers/gpio/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/mcuboot/modules/nrf/drivers/hw_cc3xx/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/mcuboot/modules/nrf/drivers/serial/cmake_install.cmake")
 
 endif()
 

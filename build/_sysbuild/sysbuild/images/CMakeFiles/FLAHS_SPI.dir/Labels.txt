@@ -1,0 +1,13 @@
+# Target labels
+ FLAHS_SPI
+# Source files and their labels
+C:/NordProjc/FLAHS_SPI/build/_sysbuild/sysbuild/images/CMakeFiles/FLAHS_SPI
+C:/NordProjc/FLAHS_SPI/build/_sysbuild/sysbuild/images/CMakeFiles/FLAHS_SPI.rule
+C:/NordProjc/FLAHS_SPI/build/_sysbuild/sysbuild/images/CMakeFiles/FLAHS_SPI-complete.rule
+C:/NordProjc/FLAHS_SPI/build/_sysbuild/sysbuild/images/FLAHS_SPI-prefix/src/FLAHS_SPI-stamp/FLAHS_SPI-build.rule
+C:/NordProjc/FLAHS_SPI/build/_sysbuild/sysbuild/images/FLAHS_SPI-prefix/src/FLAHS_SPI-stamp/FLAHS_SPI-configure.rule
+C:/NordProjc/FLAHS_SPI/build/_sysbuild/sysbuild/images/FLAHS_SPI-prefix/src/FLAHS_SPI-stamp/FLAHS_SPI-download.rule
+C:/NordProjc/FLAHS_SPI/build/_sysbuild/sysbuild/images/FLAHS_SPI-prefix/src/FLAHS_SPI-stamp/FLAHS_SPI-install.rule
+C:/NordProjc/FLAHS_SPI/build/_sysbuild/sysbuild/images/FLAHS_SPI-prefix/src/FLAHS_SPI-stamp/FLAHS_SPI-mkdir.rule
+C:/NordProjc/FLAHS_SPI/build/_sysbuild/sysbuild/images/FLAHS_SPI-prefix/src/FLAHS_SPI-stamp/FLAHS_SPI-patch.rule
+C:/NordProjc/FLAHS_SPI/build/_sysbuild/sysbuild/images/FLAHS_SPI-prefix/src/FLAHS_SPI-stamp/FLAHS_SPI-update.rule

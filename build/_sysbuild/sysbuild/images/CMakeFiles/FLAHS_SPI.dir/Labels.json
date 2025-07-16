@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/NordProjc/FLAHS_SPI/build/_sysbuild/sysbuild/images/CMakeFiles/FLAHS_SPI"
+		},
+		{
+			"file" : "C:/NordProjc/FLAHS_SPI/build/_sysbuild/sysbuild/images/CMakeFiles/FLAHS_SPI.rule"
+		},
+		{
+			"file" : "C:/NordProjc/FLAHS_SPI/build/_sysbuild/sysbuild/images/CMakeFiles/FLAHS_SPI-complete.rule"
+		},
+		{
+			"file" : "C:/NordProjc/FLAHS_SPI/build/_sysbuild/sysbuild/images/FLAHS_SPI-prefix/src/FLAHS_SPI-stamp/FLAHS_SPI-build.rule"
+		},
+		{
+			"file" : "C:/NordProjc/FLAHS_SPI/build/_sysbuild/sysbuild/images/FLAHS_SPI-prefix/src/FLAHS_SPI-stamp/FLAHS_SPI-configure.rule"
+		},
+		{
+			"file" : "C:/NordProjc/FLAHS_SPI/build/_sysbuild/sysbuild/images/FLAHS_SPI-prefix/src/FLAHS_SPI-stamp/FLAHS_SPI-download.rule"
+		},
+		{
+			"file" : "C:/NordProjc/FLAHS_SPI/build/_sysbuild/sysbuild/images/FLAHS_SPI-prefix/src/FLAHS_SPI-stamp/FLAHS_SPI-install.rule"
+		},
+		{
+			"file" : "C:/NordProjc/FLAHS_SPI/build/_sysbuild/sysbuild/images/FLAHS_SPI-prefix/src/FLAHS_SPI-stamp/FLAHS_SPI-mkdir.rule"
+		},
+		{
+			"file" : "C:/NordProjc/FLAHS_SPI/build/_sysbuild/sysbuild/images/FLAHS_SPI-prefix/src/FLAHS_SPI-stamp/FLAHS_SPI-patch.rule"
+		},
+		{
+			"file" : "C:/NordProjc/FLAHS_SPI/build/_sysbuild/sysbuild/images/FLAHS_SPI-prefix/src/FLAHS_SPI-stamp/FLAHS_SPI-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"FLAHS_SPI"
+		],
+		"name" : "FLAHS_SPI"
+	}
+}

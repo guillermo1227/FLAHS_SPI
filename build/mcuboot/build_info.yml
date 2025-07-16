@@ -12,7 +12,7 @@ cmake:
      - C:/ncs/v2.9.0/zephyr/dts/bindings
     files:
      - C:/ncs/v2.9.0/zephyr/boards/nordic/nrf52833dk/nrf52833dk_nrf52833.dts
-     - C:/NordProjc/spi_DFU_External/sysbuild/mcuboot.overlay
+     - C:/NordProjc/FLAHS_SPI/sysbuild/mcuboot.overlay
     include-dirs:
      - C:/ncs/v2.9.0/nrf/include
      - C:/ncs/v2.9.0/nrf/dts
@@ -31,19 +31,19 @@ cmake:
      - C:/ncs/v2.9.0/zephyr/dts/arc
      - C:/ncs/v2.9.0/zephyr/dts
     user-files:
-     - C:/NordProjc/spi_DFU_External/sysbuild/mcuboot.overlay
+     - C:/NordProjc/FLAHS_SPI/sysbuild/mcuboot.overlay
   kconfig:
     extra-user-files:
-     - C:/NordProjc/spi_DFU_External/sysbuild/mcuboot.conf
+     - C:/NordProjc/FLAHS_SPI/sysbuild/mcuboot.conf
      - C:/ncs/v2.9.0/nrf/subsys/bootloader/bl_override/override_external_mcuboot.conf
      - C:/ncs/v2.9.0/nrf/subsys/partition_manager/ext_flash_mcuboot_secondary.conf
     files:
      - C:/ncs/v2.9.0/zephyr/boards/nordic/nrf52833dk/nrf52833dk_nrf52833_defconfig
      - C:/ncs/v2.9.0/bootloader/mcuboot/boot/zephyr/prj.conf
-     - C:/NordProjc/spi_DFU_External/sysbuild/mcuboot.conf
+     - C:/NordProjc/FLAHS_SPI/sysbuild/mcuboot.conf
      - C:/ncs/v2.9.0/nrf/subsys/bootloader/bl_override/override_external_mcuboot.conf
      - C:/ncs/v2.9.0/nrf/subsys/partition_manager/ext_flash_mcuboot_secondary.conf
-     - C:/NordProjc/spi_DFU_External/build/mcuboot/zephyr/.config.sysbuild
+     - C:/NordProjc/FLAHS_SPI/build/mcuboot/zephyr/.config.sysbuild
     user-files:
      - C:/ncs/v2.9.0/bootloader/mcuboot/boot/zephyr/prj.conf
   toolchain:

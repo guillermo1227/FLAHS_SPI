@@ -7,6 +7,10 @@
 #include <zephyr/kernel.h>
 #include <zephyr/drivers/gpio.h>
 
+#include <zephyr/drivers/flash.h>
+#include <zephyr/storage/flash_map.h>
+#include <zephyr/logging/log.h>
+
 /* 1000 msec = 1 sec */
 
 #define SLEEP_TIME_MS   1000
@@ -95,29 +99,30 @@ int main(void)
 
 	int counter = 0;
 	while (1) {
-		// Patrón más simple y lento
-		switch (counter % 3) {
-			case 0:
-				gpio_pin_set_dt(&rgb_r, 1); // Rojo ON
-				gpio_pin_set_dt(&rgb_g, 0); // Verde OFF
-				gpio_pin_set_dt(&rgb_b, 0); // Azul OFF
-				printk("LED: ROJO\n");
-				break;
-			case 1:
 
-				gpio_pin_set_dt(&rgb_r, 0);
-				gpio_pin_set_dt(&rgb_g, 1); // Verde ON
-				gpio_pin_set_dt(&rgb_b, 0);
-				printk("LED: VERDE\n");
-				break;
-			case 2:
-				/* Agrego esto*/
-				gpio_pin_set_dt(&rgb_r, 0);
-				gpio_pin_set_dt(&rgb_g, 0);
-				gpio_pin_set_dt(&rgb_b, 1); // Azul ON
-				printk("LED: AZUL\n");
-				break;
+		if(counter == 1)
+		{
+			gpio_pin_set_dt(&rgb_r, 1); // Rojo ON
+			gpio_pin_set_dt(&rgb_g, 0); // Verde OFF
+			gpio_pin_set_dt(&rgb_b, 0); // Azul OFF
+			printk("LED: ROJO\n");
 		}
+		else if(counter == 2)
+		{
+			gpio_pin_set_dt(&rgb_r, 0);
+			gpio_pin_set_dt(&rgb_g, 1); // Verde ON
+			gpio_pin_set_dt(&rgb_b, 0);
+			printk("LED: VERDE\n");
+		}
+		else if(counter == 3)
+		{
+			gpio_pin_set_dt(&rgb_r, 0);
+			gpio_pin_set_dt(&rgb_g, 0);
+			gpio_pin_set_dt(&rgb_b, 1); // Azul ON
+			printk("LED: AZUL\n");
+			counter = 0; // Reiniciar contador
+		}
+		
 		counter++;
 		k_msleep(2000); // 2 segundos entre cambios
 	}

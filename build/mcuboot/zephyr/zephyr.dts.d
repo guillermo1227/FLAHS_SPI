@@ -28,4 +28,4 @@ empty_file.o: C:/ncs/v2.9.0/zephyr/misc/empty_file.c \
  C:/ncs/v2.9.0/zephyr/include/zephyr/dt-bindings/adc/nrf-saadc.h \
  C:/ncs/v2.9.0/zephyr/include/zephyr/dt-bindings/regulator/nrf5x.h \
  C:/ncs/v2.9.0/zephyr/boards/nordic/nrf52833dk/nrf52833dk_nrf52833-pinctrl.dtsi \
- C:/NordProjc/spi_DFU_External/sysbuild/mcuboot.overlay
+ C:/NordProjc/FLAHS_SPI/sysbuild/mcuboot.overlay

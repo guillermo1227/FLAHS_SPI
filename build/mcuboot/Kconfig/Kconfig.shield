@@ -1,2 +1,4 @@
 osource "C:/NordProjc/l5_SPI_manul/boards/shields/*/Kconfig.shield"
+osource "C:/NordProjc/Smart_Lamp_Nordic_V3.1/boards/shields/*/Kconfig.shield"
+osource "C:/NordProjc/blinky/boards/shields/*/Kconfig.shield"
 osource "C:/ncs/v2.9.0/nrf/boards/shields/*/Kconfig.shield"

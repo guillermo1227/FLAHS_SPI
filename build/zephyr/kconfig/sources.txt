@@ -1,8 +1,8 @@
-C:\NordProjc\spi_DFU_External\build\Kconfig\Kconfig.sysbuild.modules
-C:\NordProjc\spi_DFU_External\build\Kconfig\boards\Kconfig.nrf52833dk
-C:\NordProjc\spi_DFU_External\build\Kconfig\boards\Kconfig.sysbuild
-C:\NordProjc\spi_DFU_External\build\Kconfig\soc\Kconfig.soc
-C:\NordProjc\spi_DFU_External\build\Kconfig\soc\Kconfig.sysbuild
+C:\NordProjc\FLAHS_SPI\build\Kconfig\Kconfig.sysbuild.modules
+C:\NordProjc\FLAHS_SPI\build\Kconfig\boards\Kconfig.nrf52833dk
+C:\NordProjc\FLAHS_SPI\build\Kconfig\boards\Kconfig.sysbuild
+C:\NordProjc\FLAHS_SPI\build\Kconfig\soc\Kconfig.soc
+C:\NordProjc\FLAHS_SPI\build\Kconfig\soc\Kconfig.sysbuild
 C:\ncs\v2.9.0\nrf\sysbuild\Kconfig.appcore
 C:\ncs\v2.9.0\nrf\sysbuild\Kconfig.approtect
 C:\ncs\v2.9.0\nrf\sysbuild\Kconfig.bt_fast_pair

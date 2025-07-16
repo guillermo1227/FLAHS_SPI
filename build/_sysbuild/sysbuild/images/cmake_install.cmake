@@ -34,26 +34,26 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/NordProjc/spi_DFU_External/build/_sysbuild/sysbuild/images/bootloader/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/_sysbuild/sysbuild/images/bootloader/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/NordProjc/spi_DFU_External/build/modules/nrf/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/modules/nrf/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/NordProjc/spi_DFU_External/build/modules/mcuboot/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/modules/mcuboot/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/NordProjc/spi_DFU_External/build/_sysbuild/sysbuild/images/boards/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/_sysbuild/sysbuild/images/boards/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/NordProjc/spi_DFU_External/build/_sysbuild/sysbuild/images/soc/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/_sysbuild/sysbuild/images/soc/cmake_install.cmake")
 endif()
 

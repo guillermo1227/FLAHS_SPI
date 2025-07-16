@@ -737,11 +737,11 @@
 &pinctrl {
  uart0_default: uart0_default {
   group1 {
-   psels = <((((((0) * 32U) + (6)) & 0x1FFU) << 0U) | ((0U & 0xFFU) << 24U))>,
+   psels = <((((((0) * 32U) + (10)) & 0x1FFU) << 0U) | ((0U & 0xFFU) << 24U))>,
     <((((((0) * 32U) + (5)) & 0x1FFU) << 0U) | ((2U & 0xFFU) << 24U))>;
   };
   group2 {
-   psels = <((((((0) * 32U) + (8)) & 0x1FFU) << 0U) | ((1U & 0xFFU) << 24U))>,
+   psels = <((((((0) * 32U) + (9)) & 0x1FFU) << 0U) | ((1U & 0xFFU) << 24U))>,
     <((((((0) * 32U) + (7)) & 0x1FFU) << 0U) | ((3U & 0xFFU) << 24U))>;
    bias-pull-up;
   };
@@ -749,8 +749,8 @@
 
  uart0_sleep: uart0_sleep {
   group1 {
-   psels = <((((((0) * 32U) + (6)) & 0x1FFU) << 0U) | ((0U & 0xFFU) << 24U))>,
-    <((((((0) * 32U) + (8)) & 0x1FFU) << 0U) | ((1U & 0xFFU) << 24U))>,
+   psels = <((((((0) * 32U) + (10)) & 0x1FFU) << 0U) | ((0U & 0xFFU) << 24U))>,
+    <((((((0) * 32U) + (9)) & 0x1FFU) << 0U) | ((1U & 0xFFU) << 24U))>,
     <((((((0) * 32U) + (5)) & 0x1FFU) << 0U) | ((2U & 0xFFU) << 24U))>,
     <((((((0) * 32U) + (7)) & 0x1FFU) << 0U) | ((3U & 0xFFU) << 24U))>;
    low-power-enable;
@@ -989,7 +989,7 @@
 };
 
 &reg1 {
- regulator-initial-mode = <1>;
+    regulator-initial-mode = <0>;
 };
 
 &adc {
@@ -1112,7 +1112,7 @@ zephyr_udc0: &usbd {
  status = "okay";
 };
 # 0 "<command-line>" 2
-# 1 "C:/NordProjc/spi_DFU_External/sysbuild/mcuboot.overlay" 1
+# 1 "C:/NordProjc/FLAHS_SPI/sysbuild/mcuboot.overlay" 1
 / {
   aliases {
   mcuboot-button0 = &button1;
@@ -1123,6 +1123,7 @@ zephyr_udc0: &usbd {
 
 
 &pinctrl {
+# 33 "C:/NordProjc/FLAHS_SPI/sysbuild/mcuboot.overlay"
     spi1_custom: spi1_custom {
         group1 {
             psels = <((((((1) * 32U) + (8)) & 0x1FFU) << 0U) | ((4U & 0xFFU) << 24U))>,
@@ -1157,11 +1158,32 @@ zephyr_udc0: &usbd {
         jedec-id = [01 60 18];
         size = <134217728>;
         status = "okay";
+
+
+        partitions {
+            compatible = "fixed-partitions";
+            #address-cells = <1>;
+            #size-cells = <1>;
+
+
+            external_slot: partition@0 {
+                label = "image-1";
+                reg = <0x00000000 0x37000>;
+            };
+
+
+            external_storage: partition@37000 {
+                label = "external_storage";
+                reg = <0x37000 0xFC9000>;
+            };
+        };
     };
 };
 
 
-&s25fl128l {
+
+
+ &s25fl128l {
     status = "okay";
 };
 
@@ -1171,6 +1193,10 @@ zephyr_udc0: &usbd {
     chosen {
         nordic,pm-ext-flash = &s25fl128l;
     };
+};
+
+&reg1 {
+    regulator-initial-mode = <0>;
 };
 # 0 "<command-line>" 2
 # 1 "C:/ncs/v2.9.0/zephyr/misc/empty_file.c"

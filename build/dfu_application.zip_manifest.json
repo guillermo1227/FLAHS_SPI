@@ -1,6 +1,6 @@
 {
     "format-version": 1,
-    "time": 1751654184,
+    "time": 1752696132,
     "files": [
         {
             "type": "application",
@@ -12,9 +12,9 @@
             "slot_index_secondary": "2",
             "version_MCUBOOT": "0.0.0+0",
             "size": 44172,
-            "file": "spi_DFU_External.signed.bin",
-            "modtime": 1751654184
+            "file": "FLAHS_SPI.signed.bin",
+            "modtime": 1752696131
         }
     ],
-    "name": "spi_DFU_External"
+    "name": "FLAHS_SPI"
 }

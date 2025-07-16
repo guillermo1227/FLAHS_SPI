@@ -39,11 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/NordProjc/spi_DFU_External/build/mcuboot/modules/nrf/lib/bin/cmake_install.cmake")
-  include("C:/NordProjc/spi_DFU_External/build/mcuboot/modules/nrf/lib/fprotect/cmake_install.cmake")
-  include("C:/NordProjc/spi_DFU_External/build/mcuboot/modules/nrf/lib/flash_patch/cmake_install.cmake")
-  include("C:/NordProjc/spi_DFU_External/build/mcuboot/modules/nrf/lib/fatal_error/cmake_install.cmake")
-  include("C:/NordProjc/spi_DFU_External/build/mcuboot/modules/nrf/lib/boot_banner/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/mcuboot/modules/nrf/lib/bin/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/mcuboot/modules/nrf/lib/fprotect/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/mcuboot/modules/nrf/lib/flash_patch/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/mcuboot/modules/nrf/lib/fatal_error/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/mcuboot/modules/nrf/lib/boot_banner/cmake_install.cmake")
 
 endif()
 

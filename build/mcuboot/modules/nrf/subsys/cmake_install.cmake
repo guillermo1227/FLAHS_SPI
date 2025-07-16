@@ -39,14 +39,14 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/NordProjc/spi_DFU_External/build/mcuboot/modules/nrf/subsys/net/cmake_install.cmake")
-  include("C:/NordProjc/spi_DFU_External/build/mcuboot/modules/nrf/subsys/dfu/cmake_install.cmake")
-  include("C:/NordProjc/spi_DFU_External/build/mcuboot/modules/nrf/subsys/mpsl/cmake_install.cmake")
-  include("C:/NordProjc/spi_DFU_External/build/mcuboot/modules/nrf/subsys/logging/cmake_install.cmake")
-  include("C:/NordProjc/spi_DFU_External/build/mcuboot/modules/nrf/subsys/shell/cmake_install.cmake")
-  include("C:/NordProjc/spi_DFU_External/build/mcuboot/modules/nrf/subsys/debug/cmake_install.cmake")
-  include("C:/NordProjc/spi_DFU_External/build/mcuboot/modules/nrf/subsys/partition_manager/cmake_install.cmake")
-  include("C:/NordProjc/spi_DFU_External/build/mcuboot/modules/nrf/subsys/suit/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/mcuboot/modules/nrf/subsys/net/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/mcuboot/modules/nrf/subsys/dfu/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/mcuboot/modules/nrf/subsys/mpsl/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/mcuboot/modules/nrf/subsys/logging/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/mcuboot/modules/nrf/subsys/shell/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/mcuboot/modules/nrf/subsys/debug/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/mcuboot/modules/nrf/subsys/partition_manager/cmake_install.cmake")
+  include("C:/NordProjc/FLAHS_SPI/build/mcuboot/modules/nrf/subsys/suit/cmake_install.cmake")
 
 endif()
 

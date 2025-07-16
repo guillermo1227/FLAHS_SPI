@@ -102,7 +102,7 @@
 				compatible = "nordic,nrf5x-regulator";
 				reg = < 0x40000578 0x1 >;
 				regulator-name = "REG1";
-				regulator-initial-mode = < 0x1 >;
+				regulator-initial-mode = < 0x0 >;
 			};
 			reg0: regulator@40000580 {
 				compatible = "nordic,nrf52x-regulator-hv";
@@ -203,6 +203,19 @@
 				jedec-id = [ 01 60 18 ];
 				size = < 0x8000000 >;
 				status = "okay";
+				partitions {
+					compatible = "fixed-partitions";
+					#address-cells = < 0x1 >;
+					#size-cells = < 0x1 >;
+					external_slot: partition@0 {
+						label = "image-1";
+						reg = < 0x0 0x37000 >;
+					};
+					external_storage: partition@37000 {
+						label = "external_storage";
+						reg = < 0x37000 0xfc9000 >;
+					};
+				};
 			};
 		};
 		nfct: nfct@40005000 {
@@ -548,17 +561,17 @@
 		uart0_default: uart0_default {
 			phandle = < 0x2 >;
 			group1 {
-				psels = < 0x6 >, < 0x2000005 >;
+				psels = < 0xa >, < 0x2000005 >;
 			};
 			group2 {
-				psels = < 0x1000008 >, < 0x3000007 >;
+				psels = < 0x1000009 >, < 0x3000007 >;
 				bias-pull-up;
 			};
 		};
 		uart0_sleep: uart0_sleep {
 			phandle = < 0x3 >;
 			group1 {
-				psels = < 0x6 >, < 0x1000008 >, < 0x2000005 >, < 0x3000007 >;
+				psels = < 0xa >, < 0x1000009 >, < 0x2000005 >, < 0x3000007 >;
 				low-power-enable;
 			};
 		};
