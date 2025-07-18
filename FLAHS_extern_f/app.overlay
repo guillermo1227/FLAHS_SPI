@@ -1,0 +1,55 @@
+/* STEP 2.1 - Add external flash to application */
+
+/* Custom pinctrl for your specific pins */
+&pinctrl {
+    spi1_custom: spi1_custom {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 1, 8)>,     // P1.08 (tu pin SCK)
+                   <NRF_PSEL(SPIM_MOSI, 0, 12)>,    // P0.12 (tu pin MOSI)
+                   <NRF_PSEL(SPIM_MISO, 0, 11)>;    // P0.11 (tu pin MISO)
+        };
+    };
+    
+    spi1_custom_sleep: spi1_custom_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 1, 8)>,
+                   <NRF_PSEL(SPIM_MOSI, 0, 12)>,
+                   <NRF_PSEL(SPIM_MISO, 0, 11)>;
+            low-power-enable;
+        };
+    };
+};
+
+/* First define the S25FL128L flash device */
+&spi1 {
+    compatible = "nordic,nrf-spim";
+    pinctrl-0 = <&spi1_custom>;
+    pinctrl-1 = <&spi1_custom_sleep>;
+    pinctrl-names = "default", "sleep";
+    cs-gpios = <&gpio0 8 GPIO_ACTIVE_LOW>;  // P0.08 para CS
+    
+    s25fl128l: s25fl128l@0 {
+        compatible = "jedec,spi-nor";   // Driver genérico SPI NOR
+        reg = <0>;                      // Chip Select 0 (CS0)
+        spi-max-frequency = <8000000>;  // 8MHz máximo
+        jedec-id = [01 60 18];  //Manufacturer ID for Infineon 01h Memory Interface Type 60h  Device ID LSB - Density and Features 18h (128Mb)
+        size = <134217728>; /* 128 Mbit = 16 MB */
+        status = "okay";
+    };
+};
+
+/* Enable the flash for application use */
+&s25fl128l {
+    status = "okay";
+};
+
+/* Tell Nordic Partition Manager about external flash */
+/ {
+    chosen {
+        nordic,pm-ext-flash = &s25fl128l;
+    };
+};
+
+&reg1 {
+    regulator-initial-mode = <NRF5X_REG_MODE_LDO>;
+};

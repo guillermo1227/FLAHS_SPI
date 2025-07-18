@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/NordProjc/FLAHS_extern_f/build_1/_sysbuild/sysbuild/images/CMakeFiles/FLAHS_extern_f"
+		},
+		{
+			"file" : "C:/NordProjc/FLAHS_extern_f/build_1/_sysbuild/sysbuild/images/CMakeFiles/FLAHS_extern_f.rule"
+		},
+		{
+			"file" : "C:/NordProjc/FLAHS_extern_f/build_1/_sysbuild/sysbuild/images/CMakeFiles/FLAHS_extern_f-complete.rule"
+		},
+		{
+			"file" : "C:/NordProjc/FLAHS_extern_f/build_1/_sysbuild/sysbuild/images/FLAHS_extern_f-prefix/src/FLAHS_extern_f-stamp/FLAHS_extern_f-build.rule"
+		},
+		{
+			"file" : "C:/NordProjc/FLAHS_extern_f/build_1/_sysbuild/sysbuild/images/FLAHS_extern_f-prefix/src/FLAHS_extern_f-stamp/FLAHS_extern_f-configure.rule"
+		},
+		{
+			"file" : "C:/NordProjc/FLAHS_extern_f/build_1/_sysbuild/sysbuild/images/FLAHS_extern_f-prefix/src/FLAHS_extern_f-stamp/FLAHS_extern_f-download.rule"
+		},
+		{
+			"file" : "C:/NordProjc/FLAHS_extern_f/build_1/_sysbuild/sysbuild/images/FLAHS_extern_f-prefix/src/FLAHS_extern_f-stamp/FLAHS_extern_f-install.rule"
+		},
+		{
+			"file" : "C:/NordProjc/FLAHS_extern_f/build_1/_sysbuild/sysbuild/images/FLAHS_extern_f-prefix/src/FLAHS_extern_f-stamp/FLAHS_extern_f-mkdir.rule"
+		},
+		{
+			"file" : "C:/NordProjc/FLAHS_extern_f/build_1/_sysbuild/sysbuild/images/FLAHS_extern_f-prefix/src/FLAHS_extern_f-stamp/FLAHS_extern_f-patch.rule"
+		},
+		{
+			"file" : "C:/NordProjc/FLAHS_extern_f/build_1/_sysbuild/sysbuild/images/FLAHS_extern_f-prefix/src/FLAHS_extern_f-stamp/FLAHS_extern_f-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"FLAHS_extern_f"
+		],
+		"name" : "FLAHS_extern_f"
+	}
+}

@@ -1,0 +1,59 @@
+/ {
+  aliases {
+		mcuboot-button0 = &button1;
+		mcuboot-led0 = &led1;
+  };
+};
+
+/* Step 2.2 - Add external flash to MCUboot */
+/* Custom pinctrl for MCUboot (same as application) */
+&pinctrl {
+    spi1_custom: spi1_custom {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 1, 8)>,
+                   <NRF_PSEL(SPIM_MOSI, 0, 12)>,
+                   <NRF_PSEL(SPIM_MISO, 0, 11)>;
+        };
+    };
+    
+    spi1_custom_sleep: spi1_custom_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 1, 8)>,
+                   <NRF_PSEL(SPIM_MOSI, 0, 12)>,
+                   <NRF_PSEL(SPIM_MISO, 0, 11)>;
+            low-power-enable;
+        };
+    };
+};
+
+/* Define the same S25FL128L flash device for MCUboot */
+&spi1 {
+    compatible = "nordic,nrf-spim";     
+    status = "okay";
+    pinctrl-0 = <&spi1_custom>;
+    pinctrl-1 = <&spi1_custom_sleep>;
+    pinctrl-names = "default", "sleep";
+    cs-gpios = <&gpio0 8 GPIO_ACTIVE_LOW>;
+
+    s25fl128l: s25fl128l@0 {
+        compatible = "jedec,spi-nor";
+        reg = <0>;
+        spi-max-frequency = <8000000>;
+        jedec-id = [01 60 18];
+        size = <134217728>; /* 128 Mbit = 16 MB */
+        status = "okay";
+    };
+};
+
+/* Enable the flash for MCUboot use */
+&s25fl128l {
+    status = "okay";
+};
+
+
+/* Tell Nordic Partition Manager about external flash for MCUboot */
+/ {
+    chosen {
+        nordic,pm-ext-flash = &s25fl128l; 
+    };
+};

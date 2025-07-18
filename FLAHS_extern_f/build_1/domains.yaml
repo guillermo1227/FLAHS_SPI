@@ -1,0 +1,9 @@
+default: FLAHS_extern_f
+build_dir: C:/NordProjc/FLAHS_extern_f/build_1
+domains:
+  - name: FLAHS_extern_f
+    build_dir: C:/NordProjc/FLAHS_extern_f/build_1/FLAHS_extern_f
+  - name: mcuboot
+    build_dir: C:/NordProjc/FLAHS_extern_f/build_1/mcuboot
+flash_order:
+  - FLAHS_extern_f
