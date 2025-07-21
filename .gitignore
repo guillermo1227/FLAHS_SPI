@@ -1,0 +1,32 @@
+# Build directories en todos los proyectos
+**/build/
+**/build_1/
+**/_build/
+
+# CMake files
+**/CMakeCache.txt
+**/CMakeFiles/
+**/*.cmake
+**/Makefile
+**/cmake_install.cmake
+
+# Build artifacts
+**/*.hex
+**/*.bin
+**/*.elf
+**/*.map
+**/*.ninja*
+**/*.pickle
+
+# VS Code nRF Connect files
+**/.vscode-nrf-connect.json
+**/build_info.yml
+
+# IDE files
+.vscode/
+*.code-workspace
+
+# Temporary files
+**/*.tmp
+**/*.bak
+**/*~

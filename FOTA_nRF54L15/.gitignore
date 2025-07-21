@@ -1,0 +1,44 @@
+# Crear .gitignore con contenido:
+@"
+# Build directories
+build/
+**/build/
+_build/
+
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+*.cmake
+Makefile
+cmake_install.cmake
+compile_commands.json
+
+# Build artifacts
+*.hex
+*.bin
+*.elf
+*.map
+*.out
+merged.hex
+
+# VS Code nRF Connect files
+.vscode-nrf-connect.json
+build_info.yml
+
+# IDE files
+.vscode/
+*.code-workspace
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# nRF Connect SDK specific
+pm_static.yml
+zephyr/
+mcuboot/
+"@ | Out-File -FilePath ".gitignore" -Encoding UTF8
